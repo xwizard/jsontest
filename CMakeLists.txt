@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(cstringcal)
+enable_testing()
+#find_package(cmocka CONFIG REQUIRED)
+find_package(cJSON CONFIG REQUIRED)
+add_executable(jsontest main.c)
+target_link_libraries(jsontest PRIVATE cjson)
